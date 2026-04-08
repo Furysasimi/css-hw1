@@ -1,0 +1,39 @@
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 150%;
+}
+/* Định dạng màu nền cho các phần tử cấu trúc */
+header {
+    background-color: #e9ecef; /* Xám nhạt */
+}
+
+nav {
+    background-color: #f8f9fa; /* Xám rất nhạt. Giúp các đường link màu xanh mặc định không bị lỗi tương phản (contrast error) khi chấm bằng WAVE */
+}
+
+main {
+    background-color: #ffffff; /* Trắng */
+    font-size: 18px;
+}
+
+footer {
+    background-color: #e9ecef; /* Xám nhạt */
+}
+
+/* Định dạng danh sách thành hàng ngang thay vì dọc */
+li {
+    display: inline-block;
+    width: 150px;
+}
+
+/* Định dạng tiêu đề chính */
+h1 {
+    text-align: center;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #000000; /* Màu đen để đảm bảo độ tương phản cao nhất */
+}
+
+/* Khoảng cách giữa các dòng chữ giúp dễ đọc hơn */
+p {
+    line-height: 1.6;
+}
