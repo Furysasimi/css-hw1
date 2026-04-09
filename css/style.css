@@ -11,6 +11,16 @@ nav {
     background-color: #f8f9fa; /* Xám rất nhạt. Giúp các đường link màu xanh mặc định không bị lỗi tương phản (contrast error) khi chấm bằng WAVE */
 }
 
+nav {
+    display: inline-block;
+    width: 80%;
+}
+
+/* Chỉ những ảnh nằm trong nav mới có độ rộng 10% */
+nav img {
+    width: 10%;
+}
+
 main {
     background-color: #ffffff; /* Trắng */
     font-size: 18px;
@@ -18,13 +28,13 @@ main {
 
 footer {
     background-color: #e9ecef; /* Xám nhạt */
-}
+}   
 
 /* Định dạng danh sách thành hàng ngang thay vì dọc */
-li {
+/* li {
     display: inline-block;
     width: 150px;
-}
+} */
 
 /* Định dạng tiêu đề chính */
 h1 {
@@ -36,4 +46,26 @@ h1 {
 /* Khoảng cách giữa các dòng chữ giúp dễ đọc hơn */
 p {
     line-height: 1.6;
+}
+
+.grid {
+    display: grid;
+    /* Tạo 2 cột, mỗi cột rộng khoảng 40% */
+    grid-template-columns: 40% 40%;
+    
+    /* Căn chỉnh khoảng cách và vị trí */
+    justify-content: space-around; 
+    align-items: center;
+    row-gap: 20px; /* Khoảng cách giữa các hàng */
+}
+
+/* Đảm bảo ảnh trong grid luôn chiếm hết chiều rộng cột */
+.grid img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các phần tử xuống hàng nếu thiếu chỗ */
+    justify-content: center; /* Căn giữa các phần tử theo chiều ngang */
 }
